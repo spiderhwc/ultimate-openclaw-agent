@@ -1,0 +1,76 @@
+{
+  "data_info": {
+    "n_samples": 1000,
+    "positive_ratio": 0.321,
+    "feature_names": [
+      "价格动量",
+      "成交量变化率",
+      "RSI指标",
+      "MACD指标",
+      "波动率"
+    ],
+    "generated_at": "2026-02-24 21:36:33"
+  },
+  "training_results": {
+    "train_metrics": {
+      "dataset": "训练集",
+      "accuracy": 0.715,
+      "precision": 0.7538461538461538,
+      "recall": 0.18773946360153257,
+      "f1_score": 0.3006134969325153,
+      "confusion_matrix": [
+        [
+          523,
+          16
+        ],
+        [
+          212,
+          49
+        ]
+      ],
+      "true_negative": 523,
+      "false_positive": 16,
+      "false_negative": 212,
+      "true_positive": 49
+    },
+    "test_metrics": {
+      "dataset": "测试集",
+      "accuracy": 0.685,
+      "precision": 0.3333333333333333,
+      "recall": 0.05,
+      "f1_score": 0.08695652173913043,
+      "confusion_matrix": [
+        [
+          134,
+          6
+        ],
+        [
+          57,
+          3
+        ]
+      ],
+      "true_negative": 134,
+      "false_positive": 6,
+      "false_negative": 57,
+      "true_positive": 3
+    },
+    "roc_auc": 0.5689285714285713,
+    "feature_importance": [
+      0.29777792096138,
+      0.11158537119626999,
+      0.21973882615566254,
+      0.20253992080688477,
+      0.1683579683303833
+    ],
+    "final_train_accuracy": 0.7149999737739563,
+    "final_test_accuracy": 0.6850000023841858,
+    "image_path": "results/logistic_regression/logistic_regression_20260224_213634.png",
+    "model_path": "results/stock_updown_predictor_20260224_213635.pth"
+  },
+  "execution_info": {
+    "timestamp": "20260224_213635",
+    "algorithm": "logistic_regression",
+    "framework": "PyTorch",
+    "version": "1.0.0"
+  }
+}
